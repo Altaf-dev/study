@@ -6,21 +6,6 @@
   &__page {
     position: relative;
     padding: 0 20px;
-    &:after {
-      content: "";
-      position: absolute;
-      width: 1500px;
-      border-bottom: 2px dotted #4c99c6;
-      top: 355px;
-      left: -50%;
-      z-index: -5;
-      @media screen and (max-width: 1199px) {
-        display: none;
-      }
-      @media screen and (min-width: 1969px) {
-        width: 3000px;
-      }
-    }
   }
   &__decor-bg {
     display: block;
@@ -140,6 +125,22 @@
     bottom: 210px;
     display: flex;
     align-items: center;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 1000px;
+      border-bottom: 2px dotted #4c99c6;
+      top: 50px;
+      left: -50%;
+      z-index: -5;
+      @media screen and (max-width: 1199px) {
+        left: 0;
+      }
+      @media screen and (min-width: 1969px) {
+        width: 2000px;
+        left: -350%;
+      }
+    }
     @media screen and (max-width: 1199px) {
       display: block;
       position: relative;
@@ -154,7 +155,7 @@
     padding-top: 15px;
     padding-bottom: 20px;
     margin-bottom: 15px;
-    border-bottom: 2px dotted #4C99C6;
+    //border-bottom: 2px dotted #4C99C6;
     @media screen and (max-width: 1199px) {
       display: block;
     }
