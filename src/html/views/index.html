@@ -6,9 +6,32 @@ description: "Какое то описание для страницы, для �
 <!--header-->
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<main class="main-page">
+<main class="main">
+    <section class="main__page">
+        <div class="container">
+            <span class="main__decor-bg">ППУ</span>
+            <div class="main__background">
+                <img class="main__image-desktop" src="img/bg-main.png" alt="image">
+                <img class="main__image-mobile" src="img/mobil-bg.png" alt="image">
+                <div class="main__decor-title">
+                    <span class="main__title">Производим</span>
+                    <span class="main__title">трубы ППУ</span>
+                </div>
+                <div class="main__decor-subtitle">
+                    <span class="main__subtitle">и фасонные</span>
+                    <span class="main__subtitle">изделия,</span>
+                </div>
+                <div class="main__text">
+                    <p class="main__text-title">Производим трубы ППУ и фасонные изделия</p>
+                    <span class="main__text-item">по ГОСТ</span>
+                    <span class="main__text-item">30732-2006</span>
+                </div>
 
-
+<!--                <span class="main__text-info">по ГОСТ</span>-->
+<!--                <span>30732-2006</span>-->
+            </div>
+        </div>
+    </section>
 </main>
 
 
